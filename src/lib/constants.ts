@@ -377,6 +377,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     tags: ["OpenAI", "LangChain", "Python", "Pinecone"],
     gradient: "from-indigo-600 to-purple-500",
   },
+  {
+    id: "vm-tracker",
+    title: "Museum Ticket Tracker",
+    category: "Automation",
+    description: "Reverse-engineered a major museum's Angular SPA to build a 24/7 availability bot + browser extension that drives checkout in seconds — stopping deliberately at captcha and payment.",
+    tags: ["Node.js", "TypeScript", "Docker", "WXT", "Telegram API"],
+    gradient: "from-emerald-600 to-teal-500",
+    slug: "vm-tracker",
+    previewImage: "/projects/vm-tracker/popup-mockup.svg",
+  },
 ];
 
 export const TEAM_MEMBERS: TeamMember[] = [

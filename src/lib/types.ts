@@ -41,6 +41,8 @@ export interface PortfolioItem {
   description: string;
   tags: string[];
   gradient: string;
+  slug?: string;
+  previewImage?: string;
   link?: string;
 }
 

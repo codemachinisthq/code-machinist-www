@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" font-family="Segoe UI, system-ui, -apple-system, sans-serif">
+  <rect width="1200" height="460" fill="#0b1220"/>
+  <text x="60" y="56" fill="#eaf0fa" font-size="30" font-weight="700">Tech Stack</text>
+  <text x="60" y="84" fill="#93a4c3" font-size="16">A server-side bot and a client-side extension, sharing a small common core.</text>
+
+  <!-- helper: each badge = rounded rect with a gold dot + label -->
+  <!-- GROUP: Bot -->
+  <text x="60" y="142" fill="#7fa0d8" font-size="14" font-weight="700" letter-spacing="1">BOT  (server-side)</text>
+  <g>
+    <g><rect x="60" y="156" width="150" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="84" cy="178" r="5" fill="#e3b341"/><text x="98" y="183" fill="#eaf0fa" font-size="15">Node.js</text></g>
+    <g><rect x="222" y="156" width="210" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="246" cy="178" r="5" fill="#e3b341"/><text x="260" y="183" fill="#eaf0fa" font-size="15">Google Sheets API</text></g>
+    <g><rect x="444" y="156" width="205" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="468" cy="178" r="5" fill="#e3b341"/><text x="482" y="183" fill="#eaf0fa" font-size="15">Telegram Bot API</text></g>
+    <g><rect x="661" y="156" width="150" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="685" cy="178" r="5" fill="#e3b341"/><text x="699" y="183" fill="#eaf0fa" font-size="15">node-fetch</text></g>
+  </g>
+
+  <!-- GROUP: Extension -->
+  <text x="60" y="246" fill="#7fa0d8" font-size="14" font-weight="700" letter-spacing="1">EXTENSION  (client-side)</text>
+  <g>
+    <g><rect x="60" y="260" width="110" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="84" cy="282" r="5" fill="#e3b341"/><text x="98" y="287" fill="#eaf0fa" font-size="15">WXT</text></g>
+    <g><rect x="182" y="260" width="150" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="206" cy="282" r="5" fill="#e3b341"/><text x="220" y="287" fill="#eaf0fa" font-size="15">TypeScript</text></g>
+    <g><rect x="344" y="260" width="110" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="368" cy="282" r="5" fill="#e3b341"/><text x="382" y="287" fill="#eaf0fa" font-size="15">React</text></g>
+    <g><rect x="466" y="260" width="200" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="490" cy="282" r="5" fill="#e3b341"/><text x="504" y="287" fill="#eaf0fa" font-size="15">MV3 content script</text></g>
+    <g><rect x="678" y="260" width="170" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="702" cy="282" r="5" fill="#e3b341"/><text x="716" y="287" fill="#eaf0fa" font-size="15">chrome.storage</text></g>
+  </g>
+
+  <!-- GROUP: Delivery -->
+  <text x="60" y="350" fill="#7fa0d8" font-size="14" font-weight="700" letter-spacing="1">DELIVERY &amp; SHARED</text>
+  <g>
+    <g><rect x="60" y="364" width="120" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="84" cy="386" r="5" fill="#e3b341"/><text x="98" y="391" fill="#eaf0fa" font-size="15">Docker</text></g>
+    <g><rect x="192" y="364" width="185" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="216" cy="386" r="5" fill="#e3b341"/><text x="230" y="391" fill="#eaf0fa" font-size="15">docker-compose</text></g>
+    <g><rect x="389" y="364" width="185" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="413" cy="386" r="5" fill="#e3b341"/><text x="427" y="391" fill="#eaf0fa" font-size="15">GitHub Actions</text></g>
+    <g><rect x="586" y="364" width="290" height="44" rx="22" fill="#15213a" stroke="#2b3f66"/><circle cx="610" cy="386" r="5" fill="#e3b341"/><text x="624" y="391" fill="#eaf0fa" font-size="15">base64 link codec + fuzzy matcher</text></g>
+  </g>
+</svg>
