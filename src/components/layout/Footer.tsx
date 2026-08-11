@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { GitBranch, Link2, AtSign, Mail, ArrowRight } from "lucide-react";
 import { LogoIcon } from "@/components/icons/LogoIcon";
+import { CONTACT_EMAIL } from "@/lib/site";
 import { MEGA_SERVICES } from "@/lib/constants";
 import { Separator } from "@/components/ui/separator";
 
@@ -14,7 +15,7 @@ const socials = [
   { icon: GitBranch, href: "#", label: "GitHub" },
   { icon: Link2, href: "#", label: "LinkedIn" },
   { icon: AtSign, href: "#", label: "Twitter / X" },
-  { icon: Mail, href: "mailto:hello@codemachinist.dev", label: "Email" },
+  { icon: Mail, href: `mailto:${CONTACT_EMAIL}`, label: "Email" },
 ];
 
 export function Footer() {
@@ -82,10 +83,10 @@ export function Footer() {
             <div className="mt-6">
               <p className="mb-1 text-sm font-semibold text-text-primary">Contact</p>
               <a
-                href="mailto:hello@codemachinist.dev"
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="text-sm text-text-secondary hover:text-brand-blue transition-colors"
               >
-                hello@codemachinist.dev
+                {CONTACT_EMAIL}
               </a>
             </div>
           </div>

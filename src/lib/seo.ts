@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://codemachinist.dev";
 const SITE_NAME = "Code Machinist";
@@ -45,7 +46,7 @@ export function organizationJsonLd() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      email: "hello@codemachinist.dev",
+      email: CONTACT_EMAIL,
     },
     sameAs: [
       "https://linkedin.com/company/codemachinist",
@@ -78,7 +79,7 @@ export function contactJsonLd() {
     name: SITE_NAME,
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
-    email: "hello@codemachinist.dev",
+    email: CONTACT_EMAIL,
     priceRange: "$$",
   };
 }

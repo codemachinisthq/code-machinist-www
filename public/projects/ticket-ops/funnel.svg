@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Segoe UI, system-ui, -apple-system, sans-serif">
+  <rect width="1200" height="620" fill="#0b1220"/>
+
+  <text x="60" y="52" fill="#eaf0fa" font-size="30" font-weight="700">Knowing whether any of it actually worked</text>
+  <text x="60" y="80" fill="#93a4c3" font-size="16">Four events, one token that joins them, and a ledger only the operator can read.</text>
+
+  <!-- ============ LEFT: the funnel ============ -->
+  <rect x="60" y="110" width="520" height="420" rx="14" fill="#15213a" stroke="#2b3f66"/>
+  <text x="84" y="140" fill="#6b8cc4" font-size="11" font-weight="700" letter-spacing="1.4">THE FOUR STAGES</text>
+
+  <rect x="110" y="160" width="420" height="56" rx="10" fill="#1a2947" stroke="#6b8cc4"/>
+  <text x="320" y="194" text-anchor="middle" fill="#eaf0fa" font-size="15" font-weight="700">Link opened</text>
+  <text x="320" y="234" text-anchor="middle" fill="#93a4c3" font-size="11.5">recorded by the redirect service when a short link is followed</text>
+
+  <rect x="150" y="252" width="340" height="56" rx="10" fill="#182c3f" stroke="#39c5cf"/>
+  <text x="320" y="286" text-anchor="middle" fill="#eaf0fa" font-size="15" font-weight="700">Reached checkout</text>
+  <text x="320" y="326" text-anchor="middle" fill="#93a4c3" font-size="11.5">reported by the page once the form is filled and parked</text>
+
+  <rect x="190" y="344" width="260" height="56" rx="10" fill="#2b2718" stroke="#e3b341"/>
+  <text x="320" y="378" text-anchor="middle" fill="#eaf0fa" font-size="15" font-weight="700">Payment started</text>
+  <text x="320" y="418" text-anchor="middle" fill="#93a4c3" font-size="11.5">the human took over and moved on to the gateway</text>
+
+  <rect x="230" y="436" width="180" height="56" rx="10" fill="#1e3326" stroke="#3fb950"/>
+  <text x="320" y="470" text-anchor="middle" fill="#8fe0a6" font-size="15" font-weight="700">Confirmed</text>
+  <text x="320" y="510" text-anchor="middle" fill="#93a4c3" font-size="11.5">a booking that actually exists at the end of it</text>
+
+  <!-- ============ RIGHT: how it gets there ============ -->
+  <text x="620" y="112" fill="#6b8cc4" font-size="11" font-weight="700" letter-spacing="1.4">HOW AN EVENT TRAVELS</text>
+
+  <rect x="620" y="124" width="520" height="70" rx="10" fill="#15213a" stroke="#2b3f66"/>
+  <text x="644" y="152" fill="#eaf0fa" font-size="14" font-weight="700">1 · The page reports its own progress</text>
+  <text x="644" y="176" fill="#93a4c3" font-size="12">A fire-and-forget send that survives the navigation it triggers.</text>
+
+  <rect x="620" y="208" width="520" height="70" rx="10" fill="#15213a" stroke="#2b3f66"/>
+  <text x="644" y="236" fill="#eaf0fa" font-size="14" font-weight="700">2 · The client stays deliberately dumb</text>
+  <text x="644" y="260" fill="#93a4c3" font-size="12">One-letter codes in an encoded blob — no stage names, no schema.</text>
+
+  <rect x="620" y="292" width="520" height="70" rx="10" fill="#15213a" stroke="#2b3f66"/>
+  <text x="644" y="320" fill="#eaf0fa" font-size="14" font-weight="700">3 · Meaning is assigned server-side</text>
+  <text x="644" y="344" fill="#93a4c3" font-size="12">The server maps codes to stages — the vocabulary changes without a reship.</text>
+
+  <rect x="620" y="376" width="520" height="70" rx="10" fill="#15213a" stroke="#2b3f66"/>
+  <text x="644" y="404" fill="#eaf0fa" font-size="14" font-weight="700">4 · Appended to a separate ledger</text>
+  <text x="644" y="428" fill="#93a4c3" font-size="12">A separate spreadsheet from the operational one, not the working file.</text>
+
+  <rect x="620" y="460" width="520" height="70" rx="10" fill="#15213a" stroke="#e3b341"/>
+  <text x="644" y="488" fill="#e3b341" font-size="14" font-weight="700">5 · Reported in exactly one chat</text>
+  <text x="644" y="512" fill="#93a4c3" font-size="12">Daily, weekly and per-client breakdowns, in the operator group only.</text>
+
+  <text x="60" y="576" fill="#6b8cc4" font-size="13">Every event carries a token derived from the booking itself, so a link opened at 09:00 can be joined to the confirmation it produced.</text>
+</svg>

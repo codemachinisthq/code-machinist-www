@@ -1,12 +1,13 @@
 import { Mail, MessageSquare, Clock, MapPin, GitBranch, Link2, AtSign } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 const info = [
   {
     icon: Mail,
     label: "Email Us",
-    value: "hello@codemachinist.dev",
-    href: "mailto:hello@codemachinist.dev",
+    value: CONTACT_EMAIL,
+    href: `mailto:${CONTACT_EMAIL}`,
     color: "#3b82f6",
   },
   {

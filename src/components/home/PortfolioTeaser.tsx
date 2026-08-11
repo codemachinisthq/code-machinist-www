@@ -37,9 +37,10 @@ export function PortfolioTeaser() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {PORTFOLIO_ITEMS.map((item, i) => {
-            const CardWrapper = item.slug
+            const href = item.link ?? (item.slug ? `/projects/${item.slug}` : null);
+            const CardWrapper = href
               ? ({ children }: { children: React.ReactNode }) => (
-                  <Link href={`/projects/${item.slug}`} className="block h-full">{children}</Link>
+                  <Link href={href} className="block h-full">{children}</Link>
                 )
               : ({ children }: { children: React.ReactNode }) => <>{children}</>;
 

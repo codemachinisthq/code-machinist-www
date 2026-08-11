@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Segoe UI, system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="pArr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6b8cc4"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="675" fill="#0b1220"/>
+
+  <text x="60" y="52" fill="#eaf0fa" font-size="30" font-weight="700">One poll tick, eight decisions</text>
+  <text x="60" y="80" fill="#93a4c3" font-size="16">What happens every few seconds, for one monitor, before anyone is allowed to be interrupted.</text>
+
+  <!-- ============ ROW 1 ============ -->
+  <g>
+    <rect x="60" y="126" width="252" height="200" rx="12" fill="#15213a" stroke="#2b3f66"/>
+    <text x="78" y="164" fill="#22355c" font-size="26" font-weight="700">01</text>
+    <text x="78" y="196" fill="#eaf0fa" font-size="15" font-weight="700">Seed a session</text>
+    <text x="78" y="238" fill="#93a4c3" font-size="12">Fetch the public visit page first so</text>
+    <text x="78" y="257" fill="#93a4c3" font-size="12">the cookie jar holds what the API</text>
+    <text x="78" y="276" fill="#93a4c3" font-size="12">expects. A cold call to the JSON</text>
+    <text x="78" y="295" fill="#93a4c3" font-size="12">endpoints answers with nothing.</text>
+
+    <rect x="336" y="126" width="252" height="200" rx="12" fill="#15213a" stroke="#2b3f66"/>
+    <text x="354" y="164" fill="#22355c" font-size="26" font-weight="700">02</text>
+    <text x="354" y="196" fill="#eaf0fa" font-size="15" font-weight="700">Resolve the visit by name</text>
+    <text x="354" y="238" fill="#93a4c3" font-size="12">The numeric id is session-scoped —</text>
+    <text x="354" y="257" fill="#93a4c3" font-size="12">worthless outside this process. So</text>
+    <text x="354" y="276" fill="#93a4c3" font-size="12">match on the name: tokenize, drop</text>
+    <text x="354" y="295" fill="#93a4c3" font-size="12">plurals, fold synonyms, then score.</text>
+
+    <rect x="612" y="126" width="252" height="200" rx="12" fill="#15213a" stroke="#2b3f66"/>
+    <text x="630" y="164" fill="#22355c" font-size="26" font-weight="700">03</text>
+    <text x="630" y="196" fill="#eaf0fa" font-size="15" font-weight="700">Fan out per language</text>
+    <text x="630" y="238" fill="#93a4c3" font-size="12">"Any language" cannot stay "any" —</text>
+    <text x="630" y="257" fill="#93a4c3" font-size="12">a booking carries exactly one. Ask</text>
+    <text x="630" y="276" fill="#93a4c3" font-size="12">each language separately and keep</text>
+    <text x="630" y="295" fill="#93a4c3" font-size="12">the one that has the wanted time.</text>
+
+    <rect x="888" y="126" width="252" height="200" rx="12" fill="#15213a" stroke="#2b3f66"/>
+    <text x="906" y="164" fill="#22355c" font-size="26" font-weight="700">04</text>
+    <text x="906" y="196" fill="#eaf0fa" font-size="15" font-weight="700">Match the time window</text>
+    <text x="906" y="238" fill="#93a4c3" font-size="12">Every requested time first, then the</text>
+    <text x="906" y="257" fill="#93a4c3" font-size="12">−30 / +30 minute fallbacks around</text>
+    <text x="906" y="276" fill="#93a4c3" font-size="12">each — in the exact priority order</text>
+    <text x="906" y="295" fill="#93a4c3" font-size="12">the extension will replay later.</text>
+  </g>
+
+  <line x1="314" y1="226" x2="334" y2="226" stroke="#6b8cc4" stroke-width="2" marker-end="url(#pArr)"/>
+  <line x1="590" y1="226" x2="610" y2="226" stroke="#6b8cc4" stroke-width="2" marker-end="url(#pArr)"/>
+  <line x1="866" y1="226" x2="886" y2="226" stroke="#6b8cc4" stroke-width="2" marker-end="url(#pArr)"/>
+  <line x1="1014" y1="328" x2="1014" y2="384" stroke="#6b8cc4" stroke-width="2" marker-end="url(#pArr)"/>
+
+  <!-- ============ ROW 2 (right to left) ============ -->
+  <g>
+    <rect x="888" y="386" width="252" height="200" rx="12" fill="#15213a" stroke="#2b3f66"/>
+    <text x="906" y="424" fill="#22355c" font-size="26" font-weight="700">05</text>
+    <text x="906" y="456" fill="#eaf0fa" font-size="15" font-weight="700">Step the party down</text>
+    <text x="906" y="498" fill="#93a4c3" font-size="12">Availability is quoted per party size.</text>
+    <text x="906" y="517" fill="#93a4c3" font-size="12">If four will not fit, try three, two,</text>
+    <text x="906" y="536" fill="#93a4c3" font-size="12">one — and alert for the largest</text>
+    <text x="906" y="555" fill="#93a4c3" font-size="12">party that does fit, not the first.</text>
+
+    <rect x="612" y="386" width="252" height="200" rx="12" fill="#15213a" stroke="#2b3f66"/>
+    <text x="630" y="424" fill="#22355c" font-size="26" font-weight="700">06</text>
+    <text x="630" y="456" fill="#eaf0fa" font-size="15" font-weight="700">Dedupe against last time</text>
+    <text x="630" y="498" fill="#93a4c3" font-size="12">Hash the offered slots plus the party</text>
+    <text x="630" y="517" fill="#93a4c3" font-size="12">size. Same hash → stay quiet. Slot</text>
+    <text x="630" y="536" fill="#93a4c3" font-size="12">gone → forget it, so its comeback</text>
+    <text x="630" y="555" fill="#93a4c3" font-size="12">is announced as news again.</text>
+
+    <rect x="336" y="386" width="252" height="200" rx="12" fill="#15213a" stroke="#2b3f66"/>
+    <text x="354" y="424" fill="#22355c" font-size="26" font-weight="700">07</text>
+    <text x="354" y="456" fill="#eaf0fa" font-size="15" font-weight="700">Encode + shorten the link</text>
+    <text x="354" y="498" fill="#93a4c3" font-size="12">Visit, date, ticket mix, slot, language</text>
+    <text x="354" y="517" fill="#93a4c3" font-size="12">and contact all ride inside the URL.</text>
+    <text x="354" y="536" fill="#93a4c3" font-size="12">~500 characters — shortened so the</text>
+    <text x="354" y="555" fill="#93a4c3" font-size="12">chat client opens it in one tap.</text>
+
+    <rect x="60" y="386" width="252" height="200" rx="12" fill="#15213a" stroke="#3fb950"/>
+    <text x="78" y="424" fill="#22355c" font-size="26" font-weight="700">08</text>
+    <text x="78" y="456" fill="#3fb950" font-size="15" font-weight="700">Deliver to one group</text>
+    <text x="78" y="498" fill="#93a4c3" font-size="12">The alert goes back to the chat that</text>
+    <text x="78" y="517" fill="#93a4c3" font-size="12">created the monitor, re-checked</text>
+    <text x="78" y="536" fill="#93a4c3" font-size="12">against that group's current ticket-</text>
+    <text x="78" y="555" fill="#93a4c3" font-size="12">type permissions on every pass.</text>
+  </g>
+
+  <line x1="886" y1="486" x2="866" y2="486" stroke="#6b8cc4" stroke-width="2" marker-end="url(#pArr)"/>
+  <line x1="610" y1="486" x2="590" y2="486" stroke="#6b8cc4" stroke-width="2" marker-end="url(#pArr)"/>
+  <line x1="334" y1="486" x2="314" y2="486" stroke="#6b8cc4" stroke-width="2" marker-end="url(#pArr)"/>
+
+  <text x="60" y="634" fill="#6b8cc4" font-size="13">Steps 5 and 6 are the ones that make it usable in practice: they turn a firehose of raw availability into a message worth reading.</text>
+</svg>

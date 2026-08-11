@@ -18,10 +18,11 @@ export async function POST(req: NextRequest) {
     // ─── Wire up your email provider here ───
     // Example with Resend:
     // import { Resend } from "resend";
+    // import { CONTACT_EMAIL, NOREPLY_EMAIL } from "@/lib/site";
     // const resend = new Resend(process.env.RESEND_API_KEY);
     // await resend.emails.send({
-    //   from: "noreply@codemachinist.dev",
-    //   to: "hello@codemachinist.dev",
+    //   from: NOREPLY_EMAIL,
+    //   to: CONTACT_EMAIL,
     //   subject: `New project enquiry from ${data.name}`,
     //   html: `<p><strong>From:</strong> ${data.name} (${data.email})</p>
     //          <p><strong>Company:</strong> ${data.company ?? "N/A"}</p>
