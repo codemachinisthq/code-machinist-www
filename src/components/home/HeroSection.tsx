@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { LogoIcon } from "@/components/icons/LogoIcon";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 
-const CYCLING_WORDS = ["Web Platforms", "Mobile Apps", "AI Products", "Desktop Software", "Cloud Solutions"];
+const CYCLING_WORDS = ["Websites", "Customer Apps", "Booking Systems", "AI Automation", "Online Stores"];
 
 function ParticleCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -170,8 +170,8 @@ export function HeroSection() {
           variants={fadeUp}
           className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-text-secondary leading-relaxed"
         >
-          Code Machinist is a full-service digital studio crafting mobile apps, web platforms,
-          desktop software, and AI-powered products — from first concept to global scale.
+          Code Machinist helps business owners get custom websites, apps, and automation
+          tools that save time and win more customers — without hiring an in-house dev team.
         </motion.p>
 
         {/* CTA buttons */}

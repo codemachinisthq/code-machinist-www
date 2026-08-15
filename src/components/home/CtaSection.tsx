@@ -53,8 +53,8 @@ export function CtaSection() {
         </h2>
 
         <p className="mx-auto mt-6 max-w-xl text-lg text-text-secondary leading-relaxed">
-          Share your idea with us — we&apos;ll scope it, advise on the best tech stack, and give you
-          an honest timeline. Zero obligation.
+          Share what your business needs — we&apos;ll scope it, recommend the right approach for
+          your budget, and give you an honest timeline. Zero obligation.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

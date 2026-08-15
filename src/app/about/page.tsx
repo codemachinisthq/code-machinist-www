@@ -8,7 +8,7 @@ import { generatePageMetadata, aboutJsonLd } from "@/lib/seo";
 export const metadata: Metadata = generatePageMetadata({
   title: "About Code Machinist",
   description:
-    "Learn about Code Machinist — our story, mission, values, and the team of engineers and designers behind your next digital product.",
+    "Learn about Code Machinist — our story, mission, values, and the team of engineers and designers who help business owners get custom software done right.",
   path: "/about",
 });
 
@@ -37,8 +37,8 @@ export default function AboutPage() {
             <span className="gradient-text">Code Machinist</span>
           </h1>
           <p className="mx-auto max-w-2xl text-lg sm:text-xl text-text-secondary leading-relaxed">
-            A team of engineers, designers, and strategists obsessed with turning bold ideas into
-            digital products that scale.
+            A team of engineers, designers, and strategists who help business owners get
+            the software they need — without enterprise pricing or agency runaround.
           </p>
         </div>
       </section>

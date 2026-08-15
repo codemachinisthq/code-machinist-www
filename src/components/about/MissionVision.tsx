@@ -10,15 +10,15 @@ const items = [
     icon: Target,
     label: "Mission",
     color: "#3b82f6",
-    title: "We craft digital tools that solve real human problems",
-    body: "Every product we build is grounded in a clear problem, a real user, and a measurable outcome. We don't build for the sake of building.",
+    title: "We build software that pays for itself",
+    body: "Every product we build is grounded in a clear business problem — more bookings, fewer manual tasks, a website that actually ranks. We don't build for the sake of building.",
   },
   {
     icon: Eye,
     label: "Vision",
     color: "#a855f7",
-    title: "The partner behind every bold founder's breakthrough",
-    body: "We aspire to be the engineering team that ambitious founders trust — the one that turns impossible timelines into shipped products.",
+    title: "The technology partner every business deserves",
+    body: "We want to be the team business owners trust to get software right the first time — without needing to hire, manage, or learn to code themselves.",
   },
   {
     icon: Heart,
@@ -26,7 +26,7 @@ const items = [
     color: "#22d3ee",
     title: "How we show up every day",
     body: null,
-    values: ["Innovation without ego", "Quality over speed, always", "Radical transparency", "Ship fast, iterate faster", "Long-term partnerships"],
+    values: ["Plain-English communication, no jargon", "Quality over speed, always", "Straightforward, upfront pricing", "Ship fast, iterate faster", "Long-term partnerships"],
   },
 ];
 

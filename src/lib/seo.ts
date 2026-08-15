@@ -4,7 +4,7 @@ import { CONTACT_EMAIL } from "@/lib/site";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://codemachinist.dev";
 const SITE_NAME = "Code Machinist";
 const DEFAULT_DESCRIPTION =
-  "We build high-performance mobile apps, web platforms, and AI-powered products. React Native, Flutter, Next.js, Node.js, AWS specialists.";
+  "Code Machinist builds websites, apps, and automation tools for business owners — practical software that saves time and wins customers, without the enterprise price tag.";
 
 export function generatePageMetadata(page: {
   title: string;
@@ -59,7 +59,7 @@ export function servicesJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Software Development Services by Code Machinist",
+    name: "Software Development Services for Businesses by Code Machinist",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Mobile App Development" },
       { "@type": "ListItem", position: 2, name: "Web Development" },
@@ -89,7 +89,7 @@ export function aboutJsonLd() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: `About ${SITE_NAME}`,
-    description: "Learn about Code Machinist — our story, mission, values, and the team behind your next digital product.",
+    description: "Learn about Code Machinist — our story, mission, values, and the team that helps business owners get custom software done right.",
     url: `${SITE_URL}/about`,
   };
 }

@@ -11,9 +11,9 @@ import { CtaSection } from "@/components/home/CtaSection";
 import { organizationJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Code Machinist — Mobile, Web & AI Development Studio",
+  title: "Code Machinist — Custom Software for Businesses",
   description:
-    "We build high-performance mobile apps, web platforms, and AI-powered products. React Native, Flutter, Next.js, Node.js, AWS specialists.",
+    "Code Machinist builds websites, apps, and automation tools for business owners — practical software that saves time and wins customers, without the enterprise price tag.",
   alternates: { canonical: "/" },
 };
 

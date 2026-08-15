@@ -6,9 +6,9 @@ import { SERVICES } from "@/lib/constants";
 import { generatePageMetadata, servicesJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Software Development Services",
+  title: "Software Development Services for Businesses",
   description:
-    "Mobile app development, web platforms, desktop apps, UI/UX design, API & backend, cloud & DevOps, and AI integration — all under one roof.",
+    "Websites, customer apps, desktop tools, UI/UX design, backend & integrations, hosting & IT, and AI automation — all under one roof, sized and priced for business.",
   path: "/services",
 });
 
@@ -33,11 +33,11 @@ export default function ServicesPage() {
             id="services-hero-heading"
             className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary mb-6"
           >
-            Everything You Need to{" "}
-            <span className="gradient-text">Ship & Scale</span>
+            Everything Your Business{" "}
+            <span className="gradient-text">Needs to Go Digital</span>
           </h1>
           <p className="mx-auto max-w-2xl text-lg sm:text-xl text-text-secondary leading-relaxed">
-            From first prototype to enterprise-grade infrastructure — we cover every layer of the modern tech stack.
+            From your first website to the tools that run your daily operations — we cover every layer, so you don&apos;t need to hire an in-house team.
           </p>
         </div>
       </section>

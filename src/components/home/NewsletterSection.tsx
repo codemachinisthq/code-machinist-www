@@ -40,10 +40,10 @@ export function NewsletterSection() {
           id="newsletter-heading"
           className="font-display text-2xl sm:text-3xl font-bold text-text-primary mb-3"
         >
-          Engineering Insights, Delivered
+          Business Tech Tips, Delivered
         </h2>
         <p className="text-text-secondary mb-8">
-          Practical tips on mobile, web, and AI development — no fluff, no spam. Join 1,200+ builders.
+          Practical advice on websites, apps, and automation for business owners — no fluff, no spam.
         </p>
 
         <AnimatePresence mode="wait">

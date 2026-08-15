@@ -32,7 +32,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-text-secondary leading-relaxed max-w-xs">
-              We build high-performance mobile apps, web platforms, and AI-powered products that move businesses forward.
+              We build websites, apps, and automation tools that help businesses save time and grow.
             </p>
             <div className="mt-5 flex items-center gap-3">
               {socials.map(({ icon: Icon, href, label }) => (
@@ -95,7 +95,7 @@ export function Footer() {
           <div>
             <p className="mb-2 text-sm font-semibold text-text-primary">Stay in the loop</p>
             <p className="mb-4 text-sm text-text-secondary">
-              Tips on mobile, web, and AI engineering — straight to your inbox.
+              Practical tech tips for business owners — straight to your inbox.
             </p>
             <form className="flex overflow-hidden rounded-lg border border-bg-border focus-within:border-brand-blue transition-colors">
               <input
