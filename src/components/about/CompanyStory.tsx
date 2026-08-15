@@ -34,20 +34,20 @@ export function CompanyStory() {
             </h2>
             <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
-                Code Machinist was founded by engineers who were tired of watching great ideas
-                get buried under bad execution. We&apos;ve lived on both sides — as founders
-                and as the team building the tech — and we know what it takes to ship products
-                that actually work.
+                Code Machinist was founded by engineers who were tired of business owners
+                getting priced out of good software — stuck choosing between a $50,000 agency
+                quote and a DIY website builder that never quite fits. We knew there was a
+                better way.
               </p>
               <p>
-                Over 8 years, we&apos;ve partnered with early-stage startups, scaling
-                mid-market companies, and enterprise teams across healthcare, fintech,
-                e-commerce, and AI. Every project has made us sharper, faster, and better at
-                translating vision into code.
+                Over 8 years, we&apos;ve partnered with local shops, clinics, service providers,
+                and online stores across dozens of industries. Every project has made us
+                sharper, faster, and better at building software that fits a business
+                budget without cutting corners on quality.
               </p>
               <p>
                 Today, our team of designers, engineers, and strategists operates as an
-                extension of your team — not a black box. You get daily updates, shared
+                extension of your team — not a black box. You get plain-English updates, shared
                 dashboards, and a partner who cares about your outcomes as much as you do.
               </p>
             </div>

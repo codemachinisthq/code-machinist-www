@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Code Machinist — Mobile, Web & AI Development Studio";
+export const alt = "Code Machinist — Custom Software for Businesses";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -80,7 +80,7 @@ export default function OgImage() {
             margin: 0,
           }}
         >
-          Mobile · Web · Desktop · AI · Cloud
+          Websites · Apps · Automation — For Business
         </p>
 
         {/* Bottom bar */}

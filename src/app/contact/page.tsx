@@ -7,7 +7,7 @@ import { generatePageMetadata, contactJsonLd } from "@/lib/seo";
 export const metadata: Metadata = generatePageMetadata({
   title: "Contact Code Machinist",
   description:
-    "Ready to build something amazing? Get in touch for a free project scoping call. We respond within 24 hours.",
+    "Ready to get your business online or automate the busywork? Get in touch for a free project scoping call. We respond within 24 hours.",
   path: "/contact",
 });
 
@@ -46,8 +46,8 @@ export default function ContactPage() {
             <span className="gradient-text">Conversation</span>
           </h1>
           <p className="text-lg sm:text-xl text-text-secondary leading-relaxed">
-            Tell us about your project — we&apos;ll scope it for free, advise on the right approach,
-            and give you an honest timeline. No pressure.
+            Tell us what your business needs — we&apos;ll scope it for free, recommend the right
+            approach for your budget, and give you an honest timeline. No pressure.
           </p>
         </div>
       </section>
