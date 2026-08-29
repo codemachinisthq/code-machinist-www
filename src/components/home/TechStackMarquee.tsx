@@ -5,11 +5,14 @@ function MarqueeRow({ items, reverse = false }: { items: string[]; reverse?: boo
   const doubled = [...items, ...items];
   return (
     <div className="relative overflow-hidden py-3" aria-hidden="true">
-      <div className={`flex gap-4 w-max ${reverse ? "animate-marquee-right" : "animate-marquee-left"}`}>
+      {/* Spacing lives on the items, not as `gap` on the row: a gap renders 2n-1 times
+          across the doubled list, so translateX(-50%) would land half a gap short and the
+          loop would visibly jump. A trailing margin on every item makes one copy exactly 50%. */}
+      <div className={`flex w-max ${reverse ? "animate-marquee-right" : "animate-marquee-left"}`}>
         {doubled.map((tech, i) => (
           <span
             key={`${tech}-${i}`}
-            className="inline-flex shrink-0 items-center gap-2 rounded-full border border-bg-border bg-bg-surface px-4 py-1.5 text-sm text-text-secondary"
+            className="mr-4 inline-flex shrink-0 items-center gap-2 rounded-full border border-bg-border bg-bg-surface px-4 py-1.5 text-sm text-text-secondary"
           >
             <span className="size-1.5 rounded-full bg-brand-blue shrink-0" />
             {tech}
