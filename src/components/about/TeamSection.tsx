@@ -22,7 +22,7 @@ export function TeamSection() {
             <span className="gradient-text">Code Machinist</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-text-secondary">
-            Senior engineers and designers who have shipped products used by millions.
+            Senior engineers and designers who bring big-company expertise to business budgets.
           </p>
         </div>
 

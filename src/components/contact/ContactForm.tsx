@@ -24,7 +24,7 @@ const schema = z.object({
   service: z.enum(["mobile", "web", "desktop", "design", "api", "cloud", "ai", "other"] as const, {
     errorMap: () => ({ message: "Please select a service" }),
   }),
-  budget: z.enum(["under-5k", "5k-20k", "20k-50k", "50k-plus"] as const, {
+  budget: z.enum(["under-2k", "2k-10k", "10k-25k", "25k-plus"] as const, {
     errorMap: () => ({ message: "Please select a budget range" }),
   }),
   message: z
@@ -47,10 +47,10 @@ const SERVICE_OPTIONS = [
 ];
 
 const BUDGET_OPTIONS = [
-  { value: "under-5k", label: "Under $5,000" },
-  { value: "5k-20k", label: "$5,000 – $20,000" },
-  { value: "20k-50k", label: "$20,000 – $50,000" },
-  { value: "50k-plus", label: "$50,000+" },
+  { value: "under-2k", label: "Under $2,000" },
+  { value: "2k-10k", label: "$2,000 – $10,000" },
+  { value: "10k-25k", label: "$10,000 – $25,000" },
+  { value: "25k-plus", label: "$25,000+" },
 ];
 
 const FIELD_CLS =

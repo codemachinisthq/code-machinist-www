@@ -32,10 +32,10 @@ export function ServicesOverview() {
             className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary"
           >
             Services Built for{" "}
-            <span className="gradient-text">Modern Products</span>
+            <span className="gradient-text">Business Growth</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-text-secondary">
-            End-to-end digital engineering — from first wireframe to production at scale.
+            Practical software, sized and priced for business — from first sketch to something your customers use every day.
           </p>
         </div>
 
